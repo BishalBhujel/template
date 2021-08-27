@@ -72,6 +72,10 @@
         margin-top: 70px;
     }
     
+    .promo-link {
+        margin-right: 8px;
+    }
+    
     .play-btn {
         width: 45px;
         margin: 20px;
@@ -228,6 +232,11 @@
         object-fit: contain;
     }
     
+    .carousel-item span {
+        padding: 10px 0 0 0;
+        color: darkgray;
+    }
+    
     .carousel-control-prev-icon {
         background-color: black;
         border-radius: 50%;
@@ -303,13 +312,12 @@
         padding-bottom: 20px;
     }
     
-    #footer>img {
-        width: 100%;
+    .footerContainer {
+        padding: 0 20px;
     }
     
     .footerRow {
         display: flex;
-        justify-content: space-evenly;
     }
     
     .footer-box {
