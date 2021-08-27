@@ -41,66 +41,6 @@
         font-size: 30px !important;
         color: white !important;
     }
-    /*----service section---*/
-    
-    #services {
-        padding: 60px 0;
-    }
-    
-    .title::before {
-        content: '';
-        background-color: #780d96;
-        height: 5px;
-        width: 200px;
-        margin: 0 auto;
-        display: block;
-        transform: translateY(63px);
-    }
-    
-    .title::after {
-        content: '';
-        background-color: #7b1798;
-        height: 10px;
-        width: 50px;
-        margin: 0 auto 40px auto;
-        display: block;
-        transform: translateY(8px);
-    }
-    
-    .title {
-        padding-bottom: 20px;
-        text-transform: uppercase;
-    }
-    
-    .service-img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .services {
-        padding: 20px;
-    }
-    
-    .services h4 {
-        padding: 5px;
-        margin-top: 25px;
-        text-transform: uppercase;
-        font-size: 20px;
-    }
-    
-    #services .btn-primary {
-        box-shadow: none;
-        padding: 8px 25px;
-        border: none;
-        outline: none;
-        border-radius: 20px;
-    }
-    /*----about section---*/
-    
-    #about {
-        background: #f8f9fa;
-        padding: 60px 0;
-    }
     /*----banner section----*/
     
     #home {
@@ -145,7 +85,142 @@
     .bottom-img {
         width: 100%;
     }
+    /*----service section---*/
+    
+    #services {
+        padding: 60px 0;
+    }
+    
+    .title::before {
+        content: '';
+        background-color: #780d96;
+        height: 5px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(63px);
+    }
+    
+    .title::after {
+        content: '';
+        background-color: #7b1798;
+        height: 10px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        display: block;
+        transform: translateY(8px);
+    }
+    
+    @media screen and (max-width:1140px) {
+        .title::after {
+            transform: translateY(10px);
+        }
+    }
+    
+    @media screen and (max-width:940px) {
+        .title::after {
+            transform: translateY(12px);
+        }
+    }
+    
+    @media screen and (max-width:840px) {
+        .title::after {
+            transform: translateY(14px);
+        }
+    }
+    
+    @media screen and (max-width:740px) {
+        .title::after {
+            transform: translateY(16px);
+        }
+    }
+    
+    .title {
+        text-transform: uppercase;
+    }
+    
+    .service-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .service-img4 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .services {
+        padding: 20px;
+    }
+    
+    .services h4 {
+        padding: 5px;
+        margin-top: 25px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    #services .btn-primary {
+        box-shadow: none;
+        padding: 8px 25px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+    }
+    /*----about section---*/
+    
+    #about {
+        background: #f8f9fa;
+        padding: 60px 0;
+    }
+    
+    .about-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 6%;
+        margin-left: 12px;
+    }
+    
+    #about ul li {
+        margin: 10px 0;
+    }
+    
+    @media screen and (max-width:992px) {
+        .aboutImg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .aboutImg>img {
+            max-height: 300px;
+        }
+        .second {
+            padding-top: 0px;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .aboutImg>img {
+            max-height: auto;
+        }
+        .second {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    
+    .second {
+        padding-top: 60px;
+    }
     /*slider section*/
+    
+    #products {
+        padding: 50px 0;
+    }
     
     .image {
         display: flex;
@@ -162,4 +237,115 @@
     .carousel-control-next-icon {
         background-color: black;
         border-radius: 50%;
+    }
+    /*----testimonials section---*/
+    
+    #testimonials {
+        padding: 50px 0;
+        background: #f8f9fa;
+    }
+    
+    .rowDiv {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .testimonials {
+        border-left: 4px solid #7b1798;
+        margin: 50px 0;
+        text-align: left;
+    }
+    
+    .testimonials img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    
+    .user-details {
+        display: inline-block;
+        font-size: 12px;
+    }
+    /*----contatc us---*/
+    
+    #contact {
+        padding: 50px 0;
+        background: #f8f9fa;
+    }
+    
+    #contatct p {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    
+    .social-icons {
+        margin-top: 15px;
+    }
+    
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+        transition: 0.5s;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .social-icons a:hover img {
+        transform: translateY(-10px);
+    }
+    /*---footer---*/
+    
+    #footer {
+        background-image: linear-gradient(to right, #a517ba, #5f1782);
+        color: #fff;
+        padding-bottom: 20px;
+    }
+    
+    #footer>img {
+        width: 100%;
+    }
+    
+    .footerRow {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .footer-box {
+        padding: 20px;
+    }
+    
+    .footer-box>img {
+        width: 120px;
+        margin-bottom: 5px;
+    }
+    
+    .centerText {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inputText {
+        width: 220px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding: 5px 10px 5px 10px;
+    }
+    
+    .rightText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .rightText button {
+        width: fit-content;
+        border: none;
+        outline: none;
+        padding: 0 5px;
+        margin-left: 10px;
+        border-radius: 3px;
+        height: 40px;
     }
