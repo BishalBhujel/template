@@ -11,12 +11,12 @@
     #nav-bar {
         position: sticky;
         top: 0;
-        z-index: 10;
+        z-index: 999;
     }
     
     .navbar {
         background-image: linear-gradient(to right, #a517ba, #5f1782);
-        padding: 0 !important;
+        padding: 5px 0px 5px 0px !important;
     }
     
     .navbar-brand img {
@@ -46,7 +46,7 @@
     #home {
         background-image: linear-gradient(to right, #a517ba, #5f1782);
         color: #fff;
-        padding-top: 3%;
+        padding-top: 4%;
     }
     
     @media screen and (max-width:992px) {
@@ -80,10 +80,6 @@
     #home a {
         text-decoration: none;
         color: #fff;
-    }
-    
-    .bottom-img {
-        width: 100%;
     }
     /*----service section---*/
     
@@ -150,7 +146,9 @@
     .service-img4 {
         height: 100px;
         width: 100px;
+        object-fit: cover;
         border-radius: 50%;
+        background-color: #fff;
     }
     
     .services {
@@ -174,7 +172,7 @@
     /*----about section---*/
     
     #about {
-        background: #f8f9fa;
+        background: #e9eaeb;
         padding: 60px 0;
     }
     
@@ -219,7 +217,8 @@
     /*slider section*/
     
     #products {
-        padding: 50px 0;
+        padding: 60px 0;
+        margin: 60px 0;
     }
     
     .image {
@@ -241,8 +240,8 @@
     /*----testimonials section---*/
     
     #testimonials {
-        padding: 50px 0;
-        background: #f8f9fa;
+        padding: 60px 0;
+        background: #e9eaeb;
     }
     
     .rowDiv {
@@ -260,6 +259,7 @@
         height: 60px;
         width: 60px;
         border-radius: 50%;
+        object-fit: cover;
     }
     
     .user-details {
@@ -269,8 +269,9 @@
     /*----contatc us---*/
     
     #contact {
-        padding: 50px 0;
-        background: #f8f9fa;
+        padding: 30px 0;
+        background-image: linear-gradient(to right, #a517ba, #5f1782);
+        color: white;
     }
     
     #contatct p {
@@ -286,7 +287,7 @@
     .social-icons img {
         width: 40px;
         height: 40px;
-        transition: 0.5s;
+        transition: 0.4s ease-in-out;
         margin-left: 5px;
         margin-right: 5px;
     }
